@@ -5,21 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae - Desarrollador de Sistemas Embebidos y Software</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
+<!-- ======= Barra de Navegación ======= -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">MAU SANDOVAL</div>
+        <ul class="nav-links">
+            <li><a href="CV.pdf" download>Descargar CV</a></li>
+            <li><a href="#">Llave Pública</a></li>
+            <li><a href="criptografia.html">Criptografía</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ======= Contenido Principal ======= -->
 <div class="container">
     <header>
         <h1>Currículum Vitae</h1>
-        <div class="subtitle">Ingeniero en Sistemas Computacionales.</div>
+        <div class="subtitle">Ingeniero en Sistemas Computacionales</div>
         <div class="contact-info">
             <a href="https://github.com/Mauricio-Sandoval" target="_blank">GitHub</a>
             <a href="mailto:mausandoval79@gmail.com">Correo: mausandoval79@gmail.com</a>
-        </div>
-
-        <div class="download-btn-container">
-            <a href="CV.pdf" download class="download-btn">Descargar CV en PDF</a>
         </div>
     </header>
 
@@ -33,83 +41,73 @@
 
         <section class="section">
             <h2>Habilidades Técnicas</h2>
-            <div class="section-content">
-                <div class="skills-list">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Java</span>
-                    <span class="skill-tag">C</span>
-                    <span class="skill-tag">PHP</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">HTML5 / CSS3</span>
-                    <span class="skill-tag">VHDL</span>
-                    <span class="skill-tag">Git / GitHub</span>
-                </div>
+            <div class="skills-list">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">HTML5 / CSS3</span>
+                <span class="skill-tag">VHDL</span>
+                <span class="skill-tag">Git / GitHub</span>
             </div>
         </section>
 
         <section class="section">
             <h2>Proyectos Destacados</h2>
-            <div class="section-content">
-                <ul class="projects-list">
-                    <li class="project-item">
-                        <div class="project-title">🎮 Juego Snake en FPGA</div>
-                        <div class="project-desc">Implementación completa en VHDL con matriz LED 8x8 y displays de 7 segmentos, lógica de puntuación, colisiones y animaciones.</div>
-                    </li>
-                    <li class="project-item">
-                        <div class="project-title">🧮 Calculadora IP/VLSM</div>
-                        <div class="project-desc">Aplicación en Python con interfaz gráfica (Tkinter) para el cálculo de subredes, máscaras y rangos IP, con opción de exportar resultados.</div>
-                    </li>
-                    <li class="project-item">
-                        <div class="project-title">🧰 Compilador en Java</div>
-                        <div class="project-desc">Desarrollado con JavaCUP y máquina de pila para ejecutar instrucciones, estructuras de control y funciones definidas por el usuario.</div>
-                    </li>
-                    <li class="project-item">
-                        <div class="project-title">💻 Sistema Gestor Escolar (PHP / HTML / CSS)</div>
-                        <div class="project-desc">Aplicación web con autenticación, administración de usuarios, alumnos y docentes, manejo de formularios, sesiones y paneles administrativos.</div>
-                    </li>
-                    <li class="project-item">
-                        <div class="project-title">🔐 Cifrado de Imágenes en Python</div>
-                        <div class="project-desc">Programa para cifrar y descifrar imágenes BMP utilizando algoritmos simétricos en modo CBC, con opción de manipular datos cifrados y verificar integridad.</div>
-                    </li>
-                </ul>
-            </div>
+            <ul class="projects-list">
+                <li class="project-item">
+                    <div class="project-title">🎮 Juego Snake en FPGA</div>
+                    <div class="project-desc">Implementación completa en VHDL con matriz LED 8x8 y displays de 7 segmentos, lógica de puntuación, colisiones y animaciones.</div>
+                </li>
+                <li class="project-item">
+                    <div class="project-title">🧮 Calculadora IP/VLSM</div>
+                    <div class="project-desc">Aplicación en Python con interfaz gráfica (Tkinter) para el cálculo de subredes, máscaras y rangos IP, con opción de exportar resultados.</div>
+                </li>
+                <li class="project-item">
+                    <div class="project-title">🧰 Compilador en Java</div>
+                    <div class="project-desc">Desarrollado con JavaCUP y máquina de pila para ejecutar instrucciones, estructuras de control y funciones definidas por el usuario.</div>
+                </li>
+                <li class="project-item">
+                    <div class="project-title">💻 Sistema Gestor Escolar (PHP / HTML / CSS)</div>
+                    <div class="project-desc">Aplicación web con autenticación, administración de usuarios, alumnos y docentes, manejo de formularios, sesiones y paneles administrativos.</div>
+                </li>
+                <li class="project-item">
+                    <div class="project-title">🔐 Cifrado de Imágenes en Python</div>
+                    <div class="project-desc">Programa para cifrar y descifrar imágenes BMP utilizando algoritmos simétricos en modo CBC, con opción de manipular datos cifrados y verificar integridad.</div>
+                </li>
+            </ul>
         </section>
 
         <section class="section">
             <h2>Educación</h2>
-            <div class="section-content">
-                <div class="education-item">
-                    <div class="institution">Ingeniería en Sistemas Computacionales (IPN)</div>
-                    <div class="years">[2023–Actualidad]</div>
-                    <div>Escuela Superior De Cómputo</div>
-                </div>
+            <div class="education-item">
+                <div class="institution">Ingeniería en Sistemas Computacionales (IPN)</div>
+                <div class="years">[2023–Actualidad]</div>
+                <div>Escuela Superior De Cómputo</div>
             </div>
         </section>
 
         <section class="section">
             <h2>Idiomas</h2>
-            <div class="section-content">
-                <div class="language-item">
-                    <div class="institution">Español:</div>
-                    <div>Nativo</div>
-                </div>
-                <div class="language-item">
-                    <div class="institution">Inglés:</div>
-                    <div>Intermedio (lectura técnica, conversación y redacción)</div>
-                </div>
+            <div class="language-item">
+                <div class="institution">Español:</div>
+                <div>Nativo</div>
+            </div>
+            <div class="language-item">
+                <div class="institution">Inglés:</div>
+                <div>Intermedio (lectura técnica, conversación y redacción)</div>
             </div>
         </section>
 
         <section class="section">
             <h2>Competencias Personales</h2>
-            <div class="section-content">
-                <ul>
-                    <li>Pensamiento analítico y resolución de problemas</li>
-                    <li>Trabajo en equipo y comunicación efectiva</li>
-                    <li>Capacidad de aprendizaje autónomo</li>
-                    <li>Enfoque en la calidad y eficiencia del código</li>
-                </ul>
-            </div>
+            <ul>
+                <li>Pensamiento analítico y resolución de problemas</li>
+                <li>Trabajo en equipo y comunicación efectiva</li>
+                <li>Capacidad de aprendizaje autónomo</li>
+                <li>Enfoque en la calidad y eficiencia del código</li>
+            </ul>
         </section>
     </main>
 
