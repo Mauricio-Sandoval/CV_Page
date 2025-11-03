@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografía - Historia y Cifrados en Bloque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">MAU SANDOVAL</div>
+        <ul class="nav-links">
+            <li><a href="CV.pdf" download>Descargar CV</a></li>
+            <li><a href="#">Llave Pública</a></li>
+            <li><a href="index.html">Volver al CV</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <header>
+        <h1>Criptografía</h1>
+        <div class="subtitle">Historia y Cifrados en Bloque</div>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>Breve Historia</h2>
+            <p>La criptografía ha acompañado al ser humano desde la antigüedad. Desde los mensajes cifrados del <b>César</b> hasta los sistemas de cifrado mecánico como la <b>Máquina Enigma</b> en la Segunda Guerra Mundial, la criptografía ha evolucionado para proteger la información frente a adversarios.</p>
+            <p>Con la llegada de la informática, la criptografía se transformó en una ciencia matemática y computacional, permitiendo el desarrollo de sistemas seguros de comunicación, autenticación y privacidad.</p>
+        </section>
+
+        <section class="section">
+            <h2>Cifrados en Bloque</h2>
+            <p>Los <b>cifrados en bloque</b> son algoritmos criptográficos simétricos que operan sobre bloques de datos de longitud fija (por ejemplo, 64 o 128 bits). En lugar de cifrar bit a bit, procesan un bloque completo mediante una serie de transformaciones matemáticas y sustituciones.</p>
+            <p>Entre los cifrados más conocidos se encuentran:</p>
+            <ul>
+                <li><b>DES (Data Encryption Standard)</b>: Uno de los primeros estándares ampliamente utilizados, con bloques de 64 bits.</li>
+                <li><b>AES (Advanced Encryption Standard)</b>: Estándar actual, con bloques de 128 bits y claves de 128, 192 o 256 bits.</li>
+            </ul>
+            <p>Estos algoritmos son la base de la seguridad moderna en sistemas bancarios, redes privadas y cifrado de archivos.</p>
+        </section>
+
+        <section class="section">
+            <h2>Modos de Operación</h2>
+            <p>Los cifrados en bloque pueden utilizar diferentes modos de operación, como:</p>
+            <ul>
+                <li><b>ECB (Electronic Codebook):</b> Cada bloque se cifra de forma independiente. No recomendado por su vulnerabilidad a patrones repetidos.</li>
+                <li><b>CBC (Cipher Block Chaining):</b> Cada bloque se encadena con el anterior mediante una operación XOR. Mejora la seguridad y evita repeticiones.</li>
+                <li><b>CFB, OFB y CTR:</b> Modos que convierten el cifrado en bloque en uno de flujo, útiles para transmisión continua de datos.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - Sección Criptografía | MAU SANDOVAL</p>
+    </footer>
+</div>
+
+</body>
+</html>
