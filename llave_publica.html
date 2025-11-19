@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llave Pública RSA</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .key-container {
+            background: #1e1e1e;
+            color: #00e676;
+            padding: 20px;
+            border-radius: 10px;
+            white-space: pre-wrap;
+            font-family: "Courier New", monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ======= Barra de Navegación ======= -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">MAU SANDOVAL</div>
+        <ul class="nav-links">
+            <li><a href="CV.pdf" download>Descargar CV</a></li>
+            <li><a href="llave_publica.html">Llave Pública</a></li>
+            <li><a href="criptografia.html">Criptografía</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ======= Contenido ======= -->
+<div class="container">
+    <header>
+        <h1>Llave Pública RSA</h1>
+        <p>Aquí puedes consultar y descargar mi llave pública para propósitos de verificación o cifrado.</p>
+        <a href="public.pem" download class="skill-tag">Descargar public.pem</a>
+    </header>
+
+    <section class="section">
+        <h2>Contenido de la Llave Pública</h2>
+        <div id="keyBox" class="key-container">Cargando llave pública...</div>
+    </section>
+</div>
+
+<script>
+// Cargar automáticamente public.pem y mostrarlo
+fetch("public.pem")
+    .then(response => response.text())
+    .then(text => {
+        document.getElementById("keyBox").textContent = text;
+    })
+    .catch(err => {
+        document.getElementById("keyBox").textContent = "No se pudo cargar la llave pública.";
+    });
+</script>
+
+</body>
+</html>
